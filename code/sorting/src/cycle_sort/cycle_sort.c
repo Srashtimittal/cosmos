@@ -1,15 +1,13 @@
 #include <stdio.h>
 
-void 
-swap(int *a, int *b)
+void swap(int *a, int *b)
 {
     int t = *b;
     *b = *a;
     *a = t;
 }
  
-void 
-cycleSort(int arr[], int n)
+void cycleSort(long long int arr[], int n)
 {
     int cycle_start;
     for (cycle_start = 0; cycle_start <= n - 2; ++cycle_start) {
@@ -46,8 +44,7 @@ cycleSort(int arr[], int n)
     }
 }
  
-int 
-main()
+int main()
 {
     int n;
     printf("Enter size of the Array: ");
